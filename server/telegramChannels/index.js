@@ -4,6 +4,7 @@ const channelController = require("./controller_db.js");
 const channelRouter = new Router();
 
 channelRouter.get("/", channelController.getAll);
+channelRouter.get("/getChat", channelController.getChat);
 channelRouter.get("/:id", channelController.getById);
 channelRouter.delete("/:id", channelController.delete);
 channelRouter.post("/", channelController.post);

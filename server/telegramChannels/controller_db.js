@@ -1,10 +1,38 @@
 const Channel = require("./model_db.js");
 const {Op} = require("sequelize");
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const options = require("../src/options.js");
+const TOKEN = options.token;
+
+function getChatId(link){
+    return 
+}
 
 const channelController ={
     getAll: async(req, res)=>{
         try {
             res.send(await Channel.findAll());
+        } catch (e) {
+            console.log(e);
+            res.status(500).send(e);
+        }
+    },
+    getChat: async(req,res)=>{
+        try {
+            let queryObject = { where:{} };
+        
+            if (req.query.id)
+                queryObject.where.id = { [Op.substring]:req.query.id }
+
+            console.log(queryObject);
+            console.log(queryObject.where.id);
+            let channel = await Channel.findByPk(parseInt(req.query.id));
+            console.log(channel);
+            let channelLink = channel.dataValues.channel_link;
+            console.log(`Channel Link: ${channelLink}`);
+            // let queriedChannels = await Channel.findAll(queryObject);
+            res.send(channelLink);
+            
         } catch (e) {
             console.log(e);
             res.status(500).send(e);
