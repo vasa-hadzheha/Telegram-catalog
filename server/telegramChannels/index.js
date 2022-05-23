@@ -5,6 +5,8 @@ const channelRouter = new Router();
 
 channelRouter.get("/", channelController.getAll);
 channelRouter.get("/getChat", channelController.getChat);
+channelRouter.get("/getMemberCount",channelController.getMemberCount);
+channelRouter.get("/getChannelPhoto",channelController.getChannelPhoto);
 channelRouter.get("/:id", channelController.getById);
 channelRouter.delete("/:id", channelController.delete);
 channelRouter.post("/", channelController.post);
@@ -17,22 +19,6 @@ module.exports = channelRouter;
 // const TOKEN = options.token
 // //const bot = new TelegramBot(TOKEN)
 // var chat_id = "@telegram";
-
-// var oReq = new XMLHttpRequest();
-// oReq.open("GET", "https://api.telegram.org/file/bot5245684585:AAHrIiqn-F83euFvX2YxxZeRw5u5XpeZn2g/profile_photos/file_1.jpg", true);
-// oReq.responseType = "arraybuffer";
-
-// oReq.onload = function (oEvent) {
-//   var arrayBuffer = oReq.response; // Note: not oReq.responseText
-//   if (arrayBuffer) {
-//     var byteArray = new Uint8Array(arrayBuffer);
-//     for (var i = 0; i < byteArray.byteLength; i++) {
-//       // do something with each byte in the array
-//     }
-//   }
-// };
-
-// oReq.send(null);
 
 // function httpRequest(URL, Method)
 // {
