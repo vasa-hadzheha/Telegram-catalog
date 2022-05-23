@@ -1,0 +1,22 @@
+{
+  "name": "telegram-catalog",
+  "version": "1.0.0",
+  "description": "Web site for finding telegram channels",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon telegram-bot/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vasyl Hadzheha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "node-telegram-bot-api": "^0.57.0",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
