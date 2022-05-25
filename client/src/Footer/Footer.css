@@ -1,0 +1,62 @@
+.footer .footer-bottom{
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer .footer-bottom ul li a {
+  line-height: 30px;
+  color: #fff;
+  position: relative;
+  margin-left: 23px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.footer-title{
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.footer-title a {
+  color:#fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+p.footer-title  {
+  color:rgb(100, 100, 100);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.flex-container{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:row;
+  -webkit-flex-direction:row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap:nowrap;
+  -ms-flex-wrap:nowrap;
+  flex-wrap:nowrap;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content: center;
+  -webkit-align-content:stretch;
+  -ms-flex-line-pack:stretch;
+  align-content: stretch;
+  -webkit-align-items:flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.flex-item{
+  -webkit-oreder: 0;
+  -ms-flex-order: 0;
+  order:0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self:auto;
+  -ms-flex-item-align:auto;
+  align-self: auto;
+}
