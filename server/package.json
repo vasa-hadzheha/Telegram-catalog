@@ -4,19 +4,23 @@
   "description": "Web site for finding telegram channels",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon telegram-bot/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vasyl Hadzheha",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
-    "koa": "^2.13.4",
-    "koa-router": "^10.1.1",
     "node-telegram-bot-api": "^0.57.0",
     "nodemon": "^2.0.16",
     "sequelize": "^6.19.0",
     "sqlite3": "^5.0.8",
     "xmlhttprequest": "^1.8.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
   }
 }
