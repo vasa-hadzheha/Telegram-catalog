@@ -1,6 +1,6 @@
 const express = require('express');
 const options = require("./options");
-const channelRouter = require("../telegramChannels")
+const channelRouter = require("../telegramChannels");
 
 const cors = require("cors");
 
@@ -13,6 +13,8 @@ backendServer.use(
 );
 
 backendServer.use(express.urlencoded({extended: false}));
+
+//to get objects and work with json format
 backendServer.use(express.json());
 
 backendServer.use("/telegram-channels", channelRouter);
