@@ -145,6 +145,23 @@ const channelController ={
             res.status(500).send(e);
         }
     },
+    put: async(req, res)=>{
+        try {
+            let newChannels = [];
+        
+            for (let i = 0; i < req.body.length; i++) {
+                newChannels.push(req.body[i]);
+            } 
+        
+            for (let i = 0; i < newChannels.length; i++) {
+                await Channel.create(newChannels[i]);
+            }
+            res.send(newChannels)
+        } catch (e) {
+            console.log(e);
+            res.status(500).send(e);
+        }
+    },
     patch: async(req, res)=>{
         try {
             let updatedChannel = await Channel.findByPk(parseInt(req.params.id));

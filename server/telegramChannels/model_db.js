@@ -12,6 +12,9 @@ Channel.init(
     {
         channel_link: {
             type: DataTypes.STRING,
+        },
+        category: {
+            type: DataTypes.STRING,
         }
     },
     {

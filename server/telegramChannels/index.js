@@ -10,6 +10,7 @@ channelRouter.get("/getChannelPhoto",channelController.getChannelPhoto);
 channelRouter.get("/:id", channelController.getById);
 channelRouter.delete("/:id", channelController.delete);
 channelRouter.post("/", channelController.post);
+channelRouter.put("/",channelController.put);
 channelRouter.patch("/:id", channelController.patch);
 
 module.exports = channelRouter;
