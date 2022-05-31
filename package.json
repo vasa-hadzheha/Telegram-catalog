@@ -1,0 +1,33 @@
+{
+  "name": "telegram-catalog",
+  "version": "1.0.0",
+  "description": "Web app to see info about telegram channels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "frontend": "cd client && npm start",
+    "backend": "cd server && npm start",
+    "installall": "concurrently \"cd client && npm init\" \"cd server && npm init\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasa-hadzheha/Telegram-catalog.git"
+  },
+  "keywords": [
+    "React",
+    "Node.js",
+    "Telegram-bot",
+    "API",
+    "telegram"
+  ],
+  "author": "Vasyl Hadzheha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasa-hadzheha/Telegram-catalog/issues"
+  },
+  "homepage": "https://github.com/vasa-hadzheha/Telegram-catalog#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
