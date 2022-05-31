@@ -1,7 +1,12 @@
+.footer{
+  margin-top: 10px;
+  height: 80px;
+}
 .footer .footer-bottom{
-    background: black;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  background: rgb(4, 4, 38);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 57px;
 }
 .footer .footer-bottom ul li a {
   line-height: 30px;
@@ -47,6 +52,7 @@ p.footer-title  {
   -webkit-align-items:flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  height: 120px;
 }
 
 .flex-item{
@@ -59,4 +65,5 @@ p.footer-title  {
   -webkit-align-self:auto;
   -ms-flex-item-align:auto;
   align-self: auto;
+  margin-left: 200px;
 }

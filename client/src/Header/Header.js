@@ -1,6 +1,11 @@
 import React from 'react';
 import "./Header.css";
 import Nav from "../Nav/Nav"
+import { Input, Space } from 'antd';
+const { Search } = Input;
+
+
+const onSearch = (value) => console.log(value);
 
 
 class Header extends React.Component {
@@ -19,14 +24,17 @@ class Header extends React.Component {
               loading="lazy"/>
           <a href="#" id="logo" target="_blank">Telegram-catalog</a>
 
-          <label htmlFor="toggle-1" className="toggle-menu">
-              <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-              </ul>
-          </label>
-          <input type="checkbox" id="toggle-1"/>
+        <Space direction="vertical"  style={{
+        width: "50%",
+        marginLeft:"40px"
+      }}>   
+            <Search placeholder="input search text" onSearch={onSearch} enterButton size="large" allowClear
+             style={{
+                width: "80%",
+              }}
+            />
+        </Space>
+          
 
           <Nav/>
       </section>

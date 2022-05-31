@@ -18,7 +18,7 @@ class Footer extends React.Component {
               <div className='flex-item'>
                 <div className='module-body'>
                   <ul className='list-unstyled'>
-                  <li><a href='####' tooltip="Site map"> Site map</a></li>
+                  {/* <li><a href='####' tooltip="Site map"> Site map</a></li> */}
                   <li><a href='###' target="_blank" tooltip="Google Sitemap">Google 
                   Sitemap</a></li>
                   </ul>
@@ -28,11 +28,10 @@ class Footer extends React.Component {
               <div className='flex-item'>
                 <div className='module-body'>
                   <ul className='list-unstyled'>
-                  <li><a href='###' tooltip="Contacts"> Contacts</a></li>
-                  <li><a href='###'>Guarantees</a></li>
-                  <li><a href='###'>About service</a></li>
-                  <li><a href='###'>Conditions</a></li>
-                  <li><a href='###'>Consent to use</a></li>
+                  <li><a href='###' tooltip="Contacts">Контакти</a></li>
+                  {/* <li><a href='###'>Guarantees</a></li> */}
+                  <li><a href='###'>Про сайт</a></li>
+
                   </ul>
                 </div>
               </div>
@@ -41,7 +40,7 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <div className='copyright-bar'>
+        {/* <div className='copyright-bar'>
           <div className='flex-container'>
             <div className='flex-item'>
               <ul className='link'>
@@ -57,7 +56,7 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
       );
   }

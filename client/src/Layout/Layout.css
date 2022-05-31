@@ -1,17 +1,17 @@
-/* HEADER -------------------------------------------------------------------------*/
-*{text-decoration:none; list-style:none;outline:none;}
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+    margin: 20px;
+  }
 
-nav{width:auto; float:right;}
-nav ul{display:table; float:right;}
-nav ul li{float:left;}
-nav ul li:last-child{padding-right:0px;}
-nav ul li a{color:#40005b; font-size:18px; padding: 15px 10px; margin-top: 20px; display:inline-block; transition: all 0.5s ease 0s;}
-nav ul li a:hover{background-color:#d8d8d86c; color:#000b12;}
-nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
-nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
 
 
-@media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1440px) {
     section{max-width:95%;}
     }
     
@@ -53,4 +53,4 @@ nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
     @media only screen and (max-width: 320px) {
     h1 {padding: 20px 0px;}
     }
-    
+  
